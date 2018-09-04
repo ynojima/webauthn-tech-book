@@ -5,6 +5,7 @@
 
 この本は Web Authentication API @<fn>{webauthn} と呼ばれる、W3Cで策定中の Web認証API についての解説本です。
 Web Authentication API とは、パスワードに依存しない新しい認証APIです。
+
 このAPIを利用することで、Webサービスへのログインに セキュリティキー といった物理デバイスや、
 PCやスマートフォンに搭載された　生体認証デバイス で認証することができるようになります。
 
@@ -12,7 +13,7 @@ PCやスマートフォンに搭載された　生体認証デバイス で認�
 
 == お問い合わせ先
 
-本書に関するお問い合わせ：support@techbooster.zendesk.com
+本書に関するお問い合わせ： twitter @watahani
 
 
 == 免責事項
