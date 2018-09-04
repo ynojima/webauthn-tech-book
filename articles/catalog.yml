@@ -2,7 +2,9 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - article.re
+  - fido.re
+  - webauthn.re
+  - shiroica.re
 
 APPENDIX:
 
