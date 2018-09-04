@@ -19,17 +19,18 @@
 
 また、パスワードの運用コストも問題として挙げられます。
 
-== FIDO 1.0
 
-FIDO 1.0 ってあったんだ～
-
-=== FIDO Alliance
+== FIDO Alliance
 
 FIDO Alliance @<fn>{fidoalliance}
 
 //footnote[fidoalliance][FIDO Alliance: @<href>{https://fidoalliance.org/}] 
 
-=== UAFとU2F
+== FIDO 1.0
+
+FIDO 1.0 ってあったんだ～
+
+== UAFとU2F
 
 時間あればちろっと書く
 
