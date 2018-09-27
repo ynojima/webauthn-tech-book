@@ -7,8 +7,7 @@ build-pdf:
   artifacts:
     paths:
       - articles/WebAuthn-Tech-Book.pdf
-  tags:
-    - docker
+
 
 # 文法はこちらを参照してください
 # https://docs.gitlab.com/ce/ci/yaml/README.html
