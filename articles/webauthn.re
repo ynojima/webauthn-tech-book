@@ -44,7 +44,7 @@ U2Fの認証サービスから WebAuthn への切り替えをスムーズにす�
 Web Authentication API は W3C で策定が進められている API で、ウェブブラウザ上で実装されます。
 このAPIですが、実は Credential Management API @<fn>{CDM} という認証情報を管理する API を拡張する形で実装されています。
 
-=== Point: Web Authentication API は Credential Management API に実装されている。
+@<strong>{Point: Web Authentication API は Credential Management API に実装されている。}
 
 //footnote[CDM][Credential Management API : @<href>{https://www.w3.org/TR/credential-management-1/}]
 
@@ -74,3 +74,4 @@ navigator.credentials.create({
 == サンプル
 
 かく
+
