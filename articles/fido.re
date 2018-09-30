@@ -24,7 +24,7 @@
 
 == FIDO Alliance
 
-FIDO Alliance @<fn>{fidoalliance} は Fast Identity Online の略で、パスワードに依存しない新しい認証の普及を目的とした団体です。
+FIDO Alliance @<fn>{fidoalliance} は Fast Identity Online の略で、パスワードに依存しない新しい認証仕様の普及を目的とした団体です。
 
 ボードメンバーとしては、グローバルでは Google, Microsoft, Amazon, Paypal といったリードカンパニーが参画しています。また今年（2018年3月）には Facebook がボードメンバー@<fn>{boardmember} として参画しています。
 Alliance 内では仕様の策定や、FIDO Certificate の認定プログラム、仕様の普及のためのイベント等が、複数のワーキンググループに分かれて行われています。
@@ -36,9 +36,9 @@ Alliance 内では仕様の策定や、FIDO Certificate の認定プログラム
 
 == FIDO の 3つの技術仕様
 
-FIDO Alliance では U2F と UAF のふたつの規格がすでに存在します。
-FIDO UAF は Universal Authentication Framework の略で、主にスマートフォンでパスワードレス認証を行うための規格です。
-一方 U2F は、Universal 2nd Factor の略で、USBなどのいわゆる「ドングル」を利用して、 Web での2段階認証を行うための規格です。
+FIDO Alliance では U2F と UAF のふたつの仕様がすでに存在します。
+FIDO UAF は Universal Authentication Framework の略で、主にスマートフォンでパスワードレス認証を行うための仕様です。
+一方 U2F は、Universal 2nd Factor の略で、USBなどのいわゆる「ドングル」を利用して、 Web での2段階認証を行うための仕様です。
 
 そして、本書で開設する Web Authentication API は、UAF/U2F を FIDO1.0 とするならば、FIDO2 プロジェクトの一部で、
 U2F をベースとしつつも、Web でもスマートフォンでも利用可能なパスワードレス認証の仕様となっています。
@@ -66,7 +66,7 @@ FIDO の認証プロトコルでは、次の4つの要素でエコシステム�
 //image[challenge_response][チャレンジレスポンス認証]
 
 ゆえにサーバー上には、ユーザーの公開鍵しか存在しないため、公開鍵が流出した場合においてもユーザーに成りすますことはできません。
-FIDO で策定されているすべての規格は、チャレンジレスポンス認証となっておりパスワード認証に比べ非常にセキュアに認証可能です。
+FIDO で策定されているすべての仕様は、チャレンジレスポンス認証となっておりパスワード認証に比べセキュアに認証可能です。
 
 === Authenticator を用いた秘密鍵の生成と保護
 
