@@ -119,7 +119,7 @@ Authenticator はキーペアの生成、秘密鍵での署名の際にユーザ
 
 この基本コンセプトをを理解したところで、本書のメインコンテンツである WebAuthn を含む FIDO2 プロジェクトについて解説したいと思います。
 
-=== FIDO2 プロジェクトは
+=== FIDO2 プロジェクトとは
 
 FIDO2 プロジェクトとは、本書で開設する W3Cの Web Authentication API（WebAuthn） と
 Client と Authenticator との通信を規定した Client To Authenticator Protocol（CTAP）
