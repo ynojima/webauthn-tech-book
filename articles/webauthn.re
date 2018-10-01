@@ -9,7 +9,6 @@ External Authenticator の関係図です。
 
 前章で解説したとおり、FIDO2.0 は WebAuthn と、 CTAP1/CTAP2 および Platform API を、
 それぞれの OS,Browser ベンダーが実装して実現するプロジェクトです。
-
 この図を見れば解るとおり、WebAuthn の裏側には、 Platform API や CTAP が存在することがわかります。
 
 Platform API は、Platform、つまり PC や スマートフォンに登載された TPM や TEE といったセキュアチップと通信を行います。
