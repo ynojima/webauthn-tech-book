@@ -15,3 +15,13 @@ docker run -t --rm -v "/c/path/to/project:/book" vvakame/review /bin/bash -ci "c
 && npm run pdf"
 ```
 
+## 紹介
+
+パスワードレス時代がもうすぐ来る！
+
+その中でも Microsoft や Google が採用し、 Chrome, Edge, Firefox  に実装されつつある Web Authentication API (WebAuthn)
+本書では、WebAuthn の基本について、前半ではその概念、プロトコルのポイントを、後半には実際のAPIについてサンプルを交えつつ解説します。
+
+電子書籍のみ ワンコイン(500円）です。
+
+つーか、はたして完成するのか！？
