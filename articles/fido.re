@@ -126,11 +126,48 @@ Client と Authenticator との通信を規定した Client To Authenticator Pro
 で構成されているプロジェクトの総称です。
 これは UAF はモバイルアプリで、U2FはWeb認証でしかつかえない@<fn>{fido1_issue} FIDO1 のように
 特定のデバイスやブラウザに依存する認証ではなく、@<b>{どのデバイスでも、どのプラットフォームでも}利用可能な
-より相互運用性の高いエコシステムの
+より相互運用性の高いエコシステムの構築を目的としたプロジェクトです。
+
+W3C や 各OSベンダーの貢献のおかげで、主要3ブラウザ、Google Chrome, Microsoft Edge, Mozilla Firefox が 
+WebAuthn 対応を発表しており、β版も含めてすべてのブラウザで実装が進んでいます。
+同時にプラットフォームAPIも WebAuthn や CTAP2 に対応が進んでおり、近い将来ブラウザからもネイティブアプリケーション
+からも、同じ WebAuthn のAPIを呼んで認証ができるようになるでしょう。
 
 //footnote[fido1_issue][厳密にはUAFをウェブ認証の要素として利用したり、U2Fをモバイルで利用することは不可能ではない]
 
-=== 対応状況？
+====[column] FIDO2 という名称について
+
+よく、FIDO1あるいは FIDO UAF/U2F と FIDO2 はどう違うんですか？という質問を受けます。
+この質問に対する技術的な回答は、後程説明する予定なのですが、
+そもそも FIDO U2F/UAF が技術仕様であったのに対し、FIDO2 は CTAP と WebAuthn を含む
+エコシステム全体のプロジェクト名であり FIDO2 という仕様があるわけではないことです。
+しかし Secirity Key by Yubico など「FIDO2 対応」と呼ばれる製品は、
+のちに説明する CTAP2（Client To Authentication Protocol 2）を指して FIDO2 と言っていたり、
+Microsoft Hello で利用可能という意味で「FIDO2」対応と言っていたり（ほぼ CATP2 対応と同義）、
+あるいは単に WebAuthn のことを FIDO2 と言っていたりと、
+人によって FIDO2 が指す領域が異なっているので注意が必要です。
+CTAP2のプロトコル上では CTAP2 対応であることを示す識別子として "fido2"
+という文字列が使われているため、これらはあながち間違いではないことが
+余計に事態をややこしくしているのでは、と個人的には感じています。
+
+//list[ctap2_getinfo][CTAP2 デバイスの getInfo メソッドの戻り値、何故 "CTAP2" とかではなく FIDO_2_0 なのか…。]{
+versions: ['U2F_V2', @<b>{'FIDO_2_0'}], 
+extensions: ['hmac-secret'], 
+aaguid: h'f8a011f38c0a4d15800617111f9edc7d', 
+options: {
+  'rk': True, 
+  'up': True, 
+  'plat': False, 
+  'clientPin': False }, 
+max_message_size: 1200,
+pin_protocols: [1]
+//}
+
+
+
+=== 対応状況
+
+#@# 余裕あれば書く
 
 ==== ブラウザ
 ==== プラットフォーム
