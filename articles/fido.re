@@ -24,7 +24,7 @@
 
 == FIDO Alliance
 
-FIDO Alliance @<fn>{fidoalliance} は Fast Identity Online の略で、パスワードに依存しない新しい認証仕様の普及を目的とした団体です。
+FIDO Alliance @<fn>{fidoalliance} は Fast IDentity Online の略で、パスワードに依存しない新しい認証仕様の普及を目的とした団体です。
 
 ボードメンバーとしては、グローバルでは Google, Microsoft, Amazon, Paypal といったリードカンパニーが参画しています。また今年（2018年3月）には Facebook がボードメンバー@<fn>{boardmember} として参画しています。
 Alliance 内では仕様の策定や、FIDO Certificate の認定プログラム、仕様の普及のためのイベント等が、複数のワーキンググループに分かれて行われています。
@@ -141,7 +141,7 @@ WebAuthn 対応を発表しており、β版も含めてすべてのブラウザ
 この質問に対する技術的な回答は、後程説明する予定なのですが、
 そもそも FIDO U2F/UAF が技術仕様であったのに対し、FIDO2 は CTAP と WebAuthn を含む
 エコシステム全体のプロジェクト名であり FIDO2 という仕様があるわけではないことです。
-しかし Secirity Key by Yubico など「FIDO2 対応」と呼ばれる製品は、
+しかし Security Key by Yubico など「FIDO2 対応」と呼ばれる製品は、
 のちに説明する CTAP2（Client To Authentication Protocol 2）を指して FIDO2 と言っていたり、
 Microsoft Hello で利用可能という意味で「FIDO2」対応と言っていたり（ほぼ CATP2 対応と同義）、
 あるいは単に WebAuthn のことを FIDO2 と言っていたりと、
