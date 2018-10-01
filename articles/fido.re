@@ -124,7 +124,7 @@ Authenticator はキーペアの生成、秘密鍵での署名の際にユーザ
 FIDO2 プロジェクトとは、本書で開設する W3Cの Web Authentication API（WebAuthn） と
 Client と Authenticator との通信を規定した Client To Authenticator Protocol（CTAP）
 で構成されているプロジェクトの総称です。
-これは UAF はモバイルアプリで、U2FはWeb認証でしかつかえない@<fn>{fido1_issue} FIDO1 のように
+これは UAF はモバイルアプリでしか、U2FはWeb認証でしかつかえない@<fn>{fido1_issue} といったように
 特定のデバイスやブラウザに依存する認証ではなく、@<b>{どのデバイスでも、どのプラットフォームでも}利用可能な
 より相互運用性の高いエコシステムの構築を目的としたプロジェクトです。
 
@@ -169,8 +169,3 @@ pin_protocols: [1]
 
 #@# 余裕あれば書く
 
-==== ブラウザ
-==== プラットフォーム
-==== Authenticator
-
-=== まとめ
