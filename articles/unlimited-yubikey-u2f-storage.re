@@ -36,6 +36,8 @@ YubikeyではRP毎の秘密鍵の作成を要求された際、デバイス固�
 rpIdを入力に秘密鍵を生成しています。秘密鍵の生成に使用したNonceとデバイス固有のSecret、rpIdがあれば、後でもRP毎の秘密鍵は
 再度導出可能であることを利用して、YubikeyではNonce（とNonceを改竄から保護するためのMAC）をCredentialIdとしています。
 
+//image[key_generation][鍵の生成]
+
 認証時には、AuthenticatorはRelying Partyから渡されたCredentialIdからNonceを取り出し、
 Nonceが改竄されていないか、MACをデバイス固有Secretで検証した上で、Nonceとデバイス固有に焼き込まれたSecret、
 rpIdから秘密鍵を導出して認証に用います。秘密鍵の導出に使用されるNonceはAuthenticator外部に暴露しますが、
