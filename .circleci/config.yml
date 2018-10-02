@@ -24,7 +24,7 @@ jobs:
       - store_artifacts:
           path: ./articles/WebAuthn-Tech-Book.pdf
       - save_cache:
-          key: article-{{ .Branch }}
+          key: article-{{ .BuildNum }}
           paths:
             - ./articles/WebAuthn-Tech-Book.pdf
           destination: WebAuthn-Tech-Book.pdf
@@ -37,7 +37,7 @@ jobs:
     steps:
       - restore_cache:
           keys:
-            - article-{{ .Branch }}
+            - article-{{ .BuildNum }}
       # gdriveをインストール
       - run: go get github.com/prasmussen/gdrive
       - deploy:
