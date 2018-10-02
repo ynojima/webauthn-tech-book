@@ -47,7 +47,14 @@ jobs:
           echo $GDRIVE_CREDENTIAL > credential.json
           gdrive --config $(pwd) --service-account credential.json update $GDRIVE_FILE_ID ./articles/WebAuthn-Tech-Book.pdf
 
-          
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - upload:
+          requires:
+            - build 
 
 
       
