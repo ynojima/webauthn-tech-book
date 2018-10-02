@@ -44,7 +44,7 @@ jobs:
           name: Upload
           command: |
             # 環境変数から認証情報を取得してJSONファイルに出力
-            echo $GDRIVE_CREDENTIAL | base64 -D > credential.json
+            echo $GDRIVE_CREDENTIAL | base64 -d > credential.json
             gdrive --config $(pwd) --service-account credential.json update $GDRIVE_FILE_ID ./articles/WebAuthn-Tech-Book.pdf
             
 workflows:
