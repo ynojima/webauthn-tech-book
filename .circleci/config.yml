@@ -16,7 +16,7 @@ jobs:
           paths:
             - ./node_modules
       - save_cache:
-          key: {{ .Branch }}
+          key: article-{{ .Branch }}
           paths:
             - ./articles/
       - run:
@@ -37,7 +37,7 @@ jobs:
     steps:
       - restore_cache:
         keys:
-          - {{ .Branch }}
+          - article-{{ .Branch }}
       # gdriveをインストール
       - run: go get github.com/prasmussen/gdrive
       - deploy:
@@ -46,6 +46,7 @@ jobs:
           # 環境変数から認証情報を取得してJSONファイルに出力
           echo $GDRIVE_CREDENTIAL > credential.json
           gdrive --config $(pwd) --service-account credential.json update $GDRIVE_FILE_ID ./articles/WebAuthn-Tech-Book.pdf
+
           
 
 
