@@ -32,7 +32,7 @@ jobs:
   upload:
     docker:
       # gdriveをソースからコンパイルするのでgolang環境が必要
-      - image: circleci/golang
+      - image: golang
     working_directory: ~/wd
     steps:
       - restore_cache:
