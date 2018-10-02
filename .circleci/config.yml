@@ -35,7 +35,6 @@ jobs:
       - image: circleci/golang
     working_directory: ~/wd
     steps:
-      - run: apk add --no-cache tar gzip
       - restore_cache:
           keys:
             - article-{{ .Branch }}
